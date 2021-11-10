@@ -1,0 +1,30 @@
+@import '../../../style/color.scss';
+
+.monthly-view {
+  padding: 20px;
+  .row-header {
+    display: flex;
+    border-bottom: 1px solid $mono203;
+    &:last-child {
+      border-bottom: none;
+    }
+    .cell {
+      flex: 1;
+      min-width: 120px;
+      height: 60px;
+      padding: 20px;
+      box-sizing: border-box;
+      border-right: 1px solid $mono203;
+      color: $mono205;
+      &:last-child {
+        border-right: none;
+      }
+      &.sun {
+        color: $red;
+      }
+      &.sat {
+        color: $blue1;
+      }
+    }
+  }
+}

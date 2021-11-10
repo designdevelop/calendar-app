@@ -1,0 +1,9 @@
+@import '../../../style/color.scss';
+
+.schedule-item {
+  padding: 8px 12px;
+  background-color: $green;
+  border-radius: 4px;
+  color: $mono200;
+  cursor: pointer;
+}

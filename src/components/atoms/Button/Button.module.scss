@@ -1,0 +1,50 @@
+@import 'src/style/color.scss';
+
+.btn {
+  min-width: 152px;
+  height: 52px;
+  padding: 0 15px;
+  line-height: 52px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  color: $mono210;
+  background-color: $mono201;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:disabled {
+    background-color: $mono203;
+    color: $mono200;
+    cursor: default;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $mono202;
+  }
+
+  &:visited,
+  &:hover {
+    background-color: $mono201;
+  }
+
+  &.primary {
+    color: $mono200;
+    background-color: $mono210;
+    &:active,
+    &:focus {
+      background-color: $mono210;
+    }
+
+    &:visited,
+    &:hover {
+      background-color: $mono210;
+    }
+    &:disabled {
+      background-color: $mono203;
+      color: $mono200;
+      cursor: default;
+    }
+  }
+}

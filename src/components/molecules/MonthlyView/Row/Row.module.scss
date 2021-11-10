@@ -1,0 +1,9 @@
+@import '../../../../style/color.scss';
+
+.row {
+  display: flex;
+  border-bottom: 1px solid $mono203;
+  &:last-child {
+    border-bottom: none;
+  }
+}

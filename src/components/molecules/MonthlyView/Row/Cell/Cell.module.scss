@@ -1,0 +1,42 @@
+@import '../../../../../style/color.scss';
+
+.cell {
+  flex: 1;
+  min-width: 120px;
+  min-height: 138px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid $mono203;
+  color: $mono205;
+  .day {
+    display: inline-block;
+    height: 24px;
+    margin-bottom: 13px;
+    position: relative;
+    .today {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 32px;
+      height: 32px;
+      transform: translate(-50%, -50%);
+      line-height: 32px;
+      text-align: center;
+      border-radius: 16px;
+      background-color: $blue3;
+      color: $mono200;
+    }
+  }
+  .schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+  &.disable {
+    color: #e0e0e0;
+  }
+}

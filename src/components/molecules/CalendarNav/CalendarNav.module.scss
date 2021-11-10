@@ -1,0 +1,45 @@
+@import '../../../style/color.scss';
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 90px;
+
+  .today-btn {
+    padding: 0 24px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid $mono203;
+    border-radius: 20px;
+    color: $mono210;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .calendar-controller {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+
+    .loc {
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+      color: $mono210;
+      white-space: nowrap;
+    }
+    .change-btn {
+      width: 13px;
+      height: 26px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../style/color.scss';
+
+.title {
+  margin: 0 0 27px 0;
+  color: $mono210;
+  font-weight: bold;
+  font-size: 28px;
+}
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .date-wrap {
+    display: flex;
+    gap: 20px;
+    & > div {
+      flex: 1;
+    }
+  }
+}
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+}
