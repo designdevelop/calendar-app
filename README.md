@@ -1,4 +1,4 @@
-# Cart App
+# Calendar App
 
 무신사 과제<br/>
 리액트(create-react-app)로 달력 어플리케이션 입니다.<br/>
